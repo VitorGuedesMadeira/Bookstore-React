@@ -84,6 +84,7 @@
   box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.3);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  overflow-y: auto;
 }
 
 .books-categories {
