@@ -96,6 +96,15 @@
   border-bottom-left-radius: 10px;
 }
 
+.books-categories button {
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 .single-book {
   background-color: white;
   display: flex;
