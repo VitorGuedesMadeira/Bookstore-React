@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from './Form';
 import SingleBook from './SingleBook';
 
 const BooksList = () => (
@@ -8,7 +7,6 @@ const BooksList = () => (
     <SingleBook genre="Fiction" title="Harry Potter" author="J.K.Rowling" />
     <SingleBook genre="Fiction" title="Harry Potter" author="J.K.Rowling" />
     <SingleBook genre="Fiction" title="Harry Potter" author="J.K.Rowling" />
-    <Form />
   </div>
 );
 
