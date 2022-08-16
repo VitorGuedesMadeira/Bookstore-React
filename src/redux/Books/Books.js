@@ -1,14 +1,14 @@
 // actions
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
+const ADD_BOOK = 'bookstore-react/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore-react/books/REMOVE_BOOK';
 
 // reducer
 const booksReducer = (state = [], action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return 'add a book';
+      return [...state, action.payload];
     case REMOVE_BOOK:
-      return 'remove a book';
+      return state.filter((book) => book.id !== action.book.id);
     default:
       return state;
   }

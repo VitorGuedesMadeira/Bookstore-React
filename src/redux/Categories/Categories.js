@@ -1,5 +1,5 @@
 // actions
-const CHECKING_STATUS = 'Checking status...';
+const CHECKING_STATUS = '/src/redux/Categories/CHECKING_STATUS';
 
 // reducer
 const categoriesReducer = (state = [], action) => {
