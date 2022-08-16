@@ -1,13 +1,18 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import SingleBook from './SingleBook';
 
-const BooksList = () => (
-  <div className="books-list">
-    <SingleBook genre="Action" title="The Hunger Games" author="Suzanne Collins" />
-    <SingleBook genre="Fiction" title="Harry Potter" author="J.K.Rowling" />
-    <SingleBook genre="Fiction" title="Harry Potter" author="J.K.Rowling" />
-    <SingleBook genre="Fiction" title="Harry Potter" author="J.K.Rowling" />
-  </div>
-);
+const BooksList = () => {
+  const booksList = useSelector((state) => state.books);
+  return (
+    <ul className="books-list">
+      {booksList.map((book) => (
+        <li key={book.id}>
+          <SingleBook title={book.title} author={book.author} id={book.id} />
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export default BooksList;

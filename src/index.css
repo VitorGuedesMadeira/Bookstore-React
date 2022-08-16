@@ -10,7 +10,8 @@
 }
 
 .app-container {
-  background-color: #d1d5f2;
+  background-color: #9099dc;
+  background-image: url(./images/45-degree-fabric-light.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,9 +117,20 @@
 .single-book-options {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 
-.single-book button {
+.delete-btn {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.05em;
+  color: #4386bf;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+.update-progress-btn {
   background-color: #0290ff;
   border: none;
   border-radius: 5px;
