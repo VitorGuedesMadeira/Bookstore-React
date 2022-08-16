@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Books from './pages/Books';
 import Categories from './pages/Categories';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Books />} />
         <Route path="Categories" element={<Categories />} />
       </Routes>
+      <Form />
     </div>
   );
 }
