@@ -10,7 +10,7 @@
 }
 
 .app-container {
-  background-color: #31436E;
+  background-color: #31436e;
   background-image: url(./images/45-degree-fabric-light.png), radial-gradient(rgba(0, 0, 255, 0.319), black);
   display: flex;
   flex-direction: column;
