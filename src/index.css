@@ -10,8 +10,8 @@
 }
 
 .app-container {
-  background-color: #9099dc;
-  background-image: url(./images/45-degree-fabric-light.png);
+  background-color: #31436E;
+  background-image: url(./images/45-degree-fabric-light.png), radial-gradient(rgba(0, 0, 255, 0.319), black);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,9 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 1.5em;
-  color: #0290ff;
+  background: -webkit-linear-gradient(#4395fc, rgb(26, 24, 41));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-div1 {
@@ -78,7 +80,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #f2f4f8;
+  background-color: rgb(238, 239, 247);
+  background-image: url(./images/dotnoise-light-grey.png);
   height: 100%;
   width: 100%;
   padding: 40px;
@@ -87,16 +90,16 @@
 }
 
 .books-categories {
-  background-color: #fafafa;
+  background-color: rgb(238, 239, 247);
+  background-image: url(./images/dotnoise-light-grey.png);
   height: 100%;
   width: 100%;
   padding: 5%;
   box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.3);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 .single-book {
+  color: rgb(3, 0, 80);
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -104,6 +107,8 @@
   border: 1px solid #e8e8e8;
   padding: 25px 150px 25px 25px;
   font-family: 'Roboto Slab', serif;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .single-book-div1 .genre {
@@ -130,23 +135,32 @@
   border: none;
 }
 
+.update-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .update-progress-btn {
-  background-color: #0290ff;
+  background-image: linear-gradient(to bottom, #4395fc, rgb(56, 54, 79));
   border: none;
   border-radius: 5px;
   color: white;
   padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
 }
 
 .books-form {
-  background-color: #f2f4f8;
+  background-color: rgb(238, 239, 247);
+  background-image: url(./images/dotnoise-light-grey.png);
   width: 100%;
   font-family: 'Roboto Slab', serif;
   padding: 40px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.6);
 }
 
 .books-form h3 {
@@ -168,10 +182,12 @@
 }
 
 .books-form button {
-  background-color: #0290ff;
+  background-image: linear-gradient(to bottom, #4395fc, rgb(56, 54, 79));
   border: none;
   border-radius: 5px;
   color: white;
   padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
 }

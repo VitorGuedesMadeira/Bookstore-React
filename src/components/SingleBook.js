@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -5,14 +6,18 @@ import { removeBook } from '../redux/Books/Books';
 
 const SingleBook = (props) => {
   const {
-    title, author, id,
+    title, author, item_id,
   } = props;
   const dispatch = useDispatch();
+
+  const removingBook = () => {
+    dispatch(removeBook({ title, author, item_id }));
+  };
 
   return (
     <div className="single-book">
       <div className="single-book-div1">
-        <p className="genre">Mumenya</p>
+        <p className="genre">Action</p>
         <h2>{title}</h2>
         <p>{author}</p>
         <div className="single-book-options">
@@ -20,9 +25,7 @@ const SingleBook = (props) => {
           <button
             className="delete-btn"
             type="button"
-            onClick={() => {
-              dispatch(removeBook({ title, author, id }));
-            }}
+            onClick={removingBook}
           >
             Remove
           </button>
@@ -32,7 +35,7 @@ const SingleBook = (props) => {
       <div>
         65% COMPLETED
       </div>
-      <div>
+      <div className="update-progress">
         <p>CURRENT CHAPTER</p>
         <p>Chapter 17</p>
         <button className="update-progress-btn" type="button">UPDATE PROGRESS</button>
@@ -42,7 +45,7 @@ const SingleBook = (props) => {
 };
 
 SingleBook.propTypes = {
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };

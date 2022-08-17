@@ -8,23 +8,25 @@ const Form = () => {
   const [titleName, setTitle] = useState('');
   const [authorName, setAuthor] = useState('');
 
+  const addingBook = (e) => {
+    e.preventDefault();
+    dispatch(addBook({
+      title: titleName,
+      author: authorName,
+      item_id: uuidv4(),
+    }));
+    setTitle('');
+    setAuthor('');
+  };
+
   return (
     <div className="books-form">
       <h3>ADD NEW BOOK</h3>
-      <form className="form-styles">
-        <input type="text" name="title" value={titleName} onInput={(e) => setTitle(e.target.value)} placeholder="Book Title" />
-        <input type="text" name="author" value={authorName} onInput={(e) => setAuthor(e.target.value)} placeholder="Author" />
+      <form onSubmit={addingBook} className="form-styles">
+        <input type="text" value={titleName} onInput={(e) => setTitle(e.target.value)} placeholder="Book Title" required />
+        <input type="text" value={authorName} onInput={(e) => setAuthor(e.target.value)} placeholder="Author" required />
         <button
-          type="button"
-          onClick={() => {
-            dispatch(addBook({
-              title: titleName,
-              author: authorName,
-              id: uuidv4(),
-            }));
-            setTitle('');
-            setAuthor('');
-          }}
+          type="submit"
         >
           ADD BOOK
         </button>
