@@ -32,7 +32,7 @@ export const addBook = (book) => async (dispatch) => {
       item_id: book.item_id,
       title: book.title,
       author: book.author,
-      category: 'Fiction',
+      category: book.category,
     }),
   }).then(dispatch({
     type: ADD_BOOK,

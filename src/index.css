@@ -96,6 +96,21 @@
   width: 100%;
   padding: 5%;
   box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-categories button {
+  background-image: linear-gradient(to bottom, #4395fc, rgb(56, 54, 79));
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
 }
 
 .single-book {
@@ -179,6 +194,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   flex: 2;
+  outline-color: rgb(32, 32, 255, 0.5);
 }
 
 .books-form button {
@@ -190,4 +206,46 @@
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
   font-weight: 600;
+}
+
+.form-control {
+  padding: 10px 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  color: blue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.circular-progress {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: conic-gradient(#4395fc 3.6deg, #ededed 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.progress-value {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #4395fc;
 }
