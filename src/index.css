@@ -113,15 +113,6 @@
   font-weight: 600;
 }
 
-.books-categories button {
-  background-color: #0290ff;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
 .single-book {
   color: rgb(3, 0, 80);
   background-color: white;
