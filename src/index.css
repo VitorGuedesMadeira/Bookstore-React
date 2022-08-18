@@ -129,7 +129,7 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid #e8e8e8;
-  padding: 25px 150px 25px 25px;
+  padding: 25px 10% 25px 25px;
   font-family: 'Roboto Slab', serif;
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -236,7 +236,7 @@
   position: relative;
   height: 100px;
   width: 100px;
-  background: conic-gradient(#4395fc 3.6deg, #ededed 0deg);
+  background: conic-gradient(#4395fc 0deg, #ededed 0deg);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -257,4 +257,42 @@
   font-size: 1.5em;
   font-weight: 600;
   color: #4395fc;
+}
+
+@media all and (max-width: 768px) {
+  .app-container {
+    height: 100%;
+  }
+
+  .nav-ul {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    gap: 10px;
+  }
+
+  .nav-ul li {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    background-image: url(images/45-degree-fabric-light.png);
+  }
+
+  .books-list {
+    gap: 50px;
+  }
+
+  .single-book {
+    flex-direction: column;
+    padding: 25px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .form-styles {
+    flex-wrap: wrap;
+  }
 }
