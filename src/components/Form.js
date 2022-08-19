@@ -26,8 +26,8 @@ const Form = () => {
     <div className="books-form">
       <h3>ADD NEW BOOK</h3>
       <form onSubmit={addingBook} className="form-styles">
-        <input type="text" value={titleName} onInput={(e) => setTitle(e.target.value)} placeholder="Book Title" required />
-        <input type="text" value={authorName} onInput={(e) => setAuthor(e.target.value)} placeholder="Author" required />
+        <input type="text" value={titleName} onInput={(e) => setTitle(e.target.value)} placeholder="Book Title" maxLength="40" required />
+        <input type="text" value={authorName} onInput={(e) => setAuthor(e.target.value)} placeholder="Author" maxLength="40" required />
         <select
           className="form-control"
           name="list"

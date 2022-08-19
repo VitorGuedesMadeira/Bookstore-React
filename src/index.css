@@ -154,6 +154,12 @@
   font-family: 'Roboto Slab', serif;
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.single-book-div1 {
+  width: 400px;
+  overflow: hidden;
 }
 
 .single-book-div1 .genre {
@@ -225,6 +231,7 @@
 
 .form-styles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   gap: 25px;
@@ -290,6 +297,10 @@
     height: 100%;
   }
 
+  .books-categories {
+    height: 100vh;
+  }
+
   .nav-ul {
     position: fixed;
     top: 30%;
@@ -316,6 +327,29 @@
     padding: 25px;
     gap: 50px;
     text-align: center;
+    overflow: hidden;
+  }
+
+  .single-book-div1 {
+    width: 100%;
+  }
+
+  .single-book h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .single-book p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .single-book-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .form-styles {
