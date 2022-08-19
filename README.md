@@ -1,21 +1,22 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-# Bookstore project: 🔢
-- Microverse - React project
+# Bookstore project: 📚
+- Microverse - React/Redux project
 
 ## Acces link
-> on progress...
+> [click here to check live version](https://bookstore-vitorguedes.netlify.app/)
 
 ## Tech ⌘⇧
 - **HTML & CSS best practices:** Correct use of tags, elements, properties and syntax.
 - **Gitflow:**  Correct use of Branches for deployment and features development.
 - **REACT:**  Used to set the basic structure.
+- **REDUX:** Centralizing application's state.
 - **Webpack:**  Source development for production bundling.
 - **Linters Check:** Local and Pull Request Github workflows to check for stylistic errors, bugs and syntax errors in code.
 
 ## Quick view
-> on progress...
+> ![](src/images/screencapture-localhost-3000-2022-08-19-01_10_45.png)
 
 ## Setup
 
