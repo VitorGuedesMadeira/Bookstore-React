@@ -72,8 +72,20 @@
   color: #121212;
 }
 
+.bookstore-link:hover,
+.bookstore-link:focus {
+  color: rgb(55, 55, 124);
+  border-bottom: 1px solid rgb(55, 55, 124);
+}
+
 .categories-link {
   color: #121212;
+}
+
+.categories-link:hover,
+.categories-link:focus {
+  color: rgb(55, 55, 124);
+  border-bottom: 1px solid rgb(55, 55, 124);
 }
 
 .books-list {
@@ -111,15 +123,24 @@
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
   font-weight: 600;
+  transition-duration: 0.2s;
 }
 
-.books-categories button {
-  background-color: #0290ff;
+.books-form button {
+  background-image: linear-gradient(to bottom, #4395fc, rgb(56, 54, 79));
   border: none;
   border-radius: 5px;
   color: white;
   padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+
+.books-categories button:hover,
+.books-categories button:focus {
+  transform: scale(1.05);
 }
 
 .single-book {
@@ -129,10 +150,16 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid #e8e8e8;
-  padding: 25px 150px 25px 25px;
+  padding: 25px 10% 25px 25px;
   font-family: 'Roboto Slab', serif;
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.single-book-div1 {
+  width: 400px;
+  overflow: hidden;
 }
 
 .single-book-div1 .genre {
@@ -159,6 +186,11 @@
   border: none;
 }
 
+.delete-btn:hover,
+.delete-btn:focus {
+  color: rgb(199, 3, 3);
+}
+
 .update-div {
   display: flex;
   flex-direction: column;
@@ -174,6 +206,12 @@
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
   font-weight: 600;
+  transition-duration: 0.2s;
+}
+
+.update-progress-btn:hover,
+.update-progress-btn:focus {
+  transform: scale(1.05);
 }
 
 .books-form {
@@ -193,6 +231,7 @@
 
 .form-styles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   gap: 25px;
@@ -206,15 +245,9 @@
   outline-color: rgb(32, 32, 255, 0.5);
 }
 
-.books-form button {
-  background-image: linear-gradient(to bottom, #4395fc, rgb(56, 54, 79));
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
-  font-weight: 600;
+.books-form button:hover,
+.books-form button:focus {
+  transform: scale(1.05);
 }
 
 .form-control {
@@ -236,7 +269,7 @@
   position: relative;
   height: 100px;
   width: 100px;
-  background: conic-gradient(#4395fc 3.6deg, #ededed 0deg);
+  background: conic-gradient(#4395fc 0deg, #ededed 0deg);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -257,4 +290,69 @@
   font-size: 1.5em;
   font-weight: 600;
   color: #4395fc;
+}
+
+@media all and (max-width: 768px) {
+  .app-container {
+    height: 100%;
+  }
+
+  .books-categories {
+    height: 100vh;
+  }
+
+  .nav-ul {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    gap: 10px;
+  }
+
+  .nav-ul li {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    background-image: url(images/45-degree-fabric-light.png);
+  }
+
+  .books-list {
+    gap: 50px;
+  }
+
+  .single-book {
+    flex-direction: column;
+    padding: 25px;
+    gap: 50px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .single-book-div1 {
+    width: 100%;
+  }
+
+  .single-book h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .single-book p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .single-book-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-styles {
+    flex-wrap: wrap;
+  }
 }
